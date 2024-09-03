@@ -5,7 +5,7 @@
 **Project Title**: E-commerce Data Analysis  
 **Database**: `amazon_project`
 
-This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore and analyze e-commerce sales data for Amazon. The project involves setting up a database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
+This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore and analyze e-commerce data for Amazon. The project involves setting up a database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
 
 ## Objectives
 
