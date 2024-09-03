@@ -15,7 +15,10 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 ## Project Structure
 
-### 1. Schema
+### 1. Database Setup
+
+- **Database Creation**: The project starts by creating a database named `amazon_project`.
+- **Table Creation**: The following tables are created - `Customers`, `Sellers`, `Products`, `Orders`, `Returns`.
 ```sql
 -- Creating Database
 CREATE DATABASE amazon_project;
