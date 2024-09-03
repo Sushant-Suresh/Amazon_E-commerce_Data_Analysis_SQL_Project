@@ -36,8 +36,9 @@ CREATE TABLE products (product_id VARCHAR(25) PRIMARY KEY, product_name VARCHAR(
 
 -- Creating `Orders` Table
 DROP TABLE IF EXISTS orders;
-CREATE TABLE orders (order_id VARCHAR(25) PRIMARY KEY, order_date DATE, customer_id VARCHAR(25), state VARCHAR(25), category VARCHAR(25),
-sub_category VARCHAR(25), product_id VARCHAR(25), price_per_unit FLOAT, quantity INT, sale FLOAT, seller_id VARCHAR(25),
+CREATE TABLE orders (order_id VARCHAR(25) PRIMARY KEY, order_date DATE, customer_id VARCHAR(25),
+                     state VARCHAR(25), category VARCHAR(25), sub_category VARCHAR(25), product_id VARCHAR(25),
+                     price_per_unit FLOAT, quantity INT, sale FLOAT, seller_id VARCHAR(25),
 
                      CONSTRAINT fk_customers FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
                      CONSTRAINT fk_products  FOREIGN KEY (product_id)  REFERENCES products(product_id),    
