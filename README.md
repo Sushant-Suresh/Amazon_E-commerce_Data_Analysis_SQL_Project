@@ -1,5 +1,9 @@
 # Amazon E-commerce Data Analysis SQL Project
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ea55bfbd-027e-45e7-9cc3-0a3da7099a1a" alt="amazon-banner_123">
+</p>
+
 ## Project Overview
 
 **Project Title**: Amazon E-commerce Data Analysis
@@ -51,7 +55,10 @@ CREATE TABLE returns (return_id VARCHAR(25) PRIMARY KEY, order_id VARCHAR(25),
 
 CONSTRAINT fk_orders FOREIGN KEY (order_id) REFERENCES orders(order_id));
 ```
-### 2. Data was imported into each table using the .csv files
+**ERD For Database:**
+
+![Amazon_ERD](https://github.com/user-attachments/assets/1556c995-1fdc-4510-bd94-0fc3ea1654c4)
+### 2. Data Imported Into Tables From the .csv Files
 ```sql
 -- `orders` Table Structure & Data
 SELECT * FROM orders;
