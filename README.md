@@ -6,7 +6,7 @@
 
 **Database**: `amazon_project`
 
-This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore and analyze e-commerce data for Amazon. The project involves setting up a database and answering specific business questions through SQL queries.
+This project is designed to demonstrate my SQL skills and techniques which I used  to explore and analyze the e-commerce data for Amazon. The project involves setting up a database and answering specific business questions through SQL queries.
 
 ## Objectives
 
@@ -238,5 +238,5 @@ WHERE rn <= 3;
 ```
 ## Conclusion
 
-This project covers the following tasks: database setup, data cleaning and analysis using business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product demand.
+This project covers the following tasks: database setup, data importing and analysis using business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product demand.
 
