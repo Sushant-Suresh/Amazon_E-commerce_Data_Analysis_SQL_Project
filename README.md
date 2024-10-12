@@ -3,6 +3,7 @@
 ## Project Overview
 
 **Project Title**: Amazon E-commerce Data Analysis
+
 **Database**: `amazon_project`
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore and analyze e-commerce data for Amazon. The project involves setting up a database and answering specific business questions through SQL queries.
