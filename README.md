@@ -257,11 +257,11 @@ FROM (SELECT o.category,
       FROM orders AS o
       JOIN products AS p ON o.product_id = p.product_id
       GROUP BY o.category, p.product_name) AS ranked_sales
-WHERE rn = 1;
+WHERE rn = 1 and category IS NOT NULL;
 ```
 **Output:**
 
-![Q12](https://github.com/user-attachments/assets/7daf8267-0ace-48af-aa82-42a1096633fa)
+![Q12](https://github.com/user-attachments/assets/cc462ad2-5031-49ce-88d3-b420e24fdf5d)
 
 13. **Identify Customers With Orders Exceeding the Average Order Value.**
 ```sql
@@ -299,11 +299,11 @@ FROM (SELECT o.category,
              ROW_NUMBER() OVER (PARTITION BY o.category ORDER BY SUM(o.sale) DESC) AS rn
       FROM orders AS o
       GROUP BY o.category, o.state) AS ranked_sales
-WHERE rn = 1;
+WHERE rn = 1 AND category IS NOT NULL;
 ```
 **Output:**
 
-![Q15](https://github.com/user-attachments/assets/e828ac83-033e-45c2-92e4-709b1a08b51e)
+![Q15](https://github.com/user-attachments/assets/bf48235c-73ca-4874-9e20-a81651c3eda2)
 
 16. **Identify Products With Profit Margin Below Average.**
 ```sql
